@@ -6,7 +6,9 @@ service TimeService {
   rpc GetServerTime (TimeRequest) returns (TimeResponse);
 }
 
-message TimeRequest {}
+message TimeRequest {
+  string timezone = 1;  // 타임존 요청
+}
 
 message TimeResponse {
   string current_time = 1;

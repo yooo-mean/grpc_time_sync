@@ -24,7 +24,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\ntime.proto\x12\x08timesync\"\r\n\x0bTimeRequest\"$\n\x0cTimeResponse\x12\x14\n\x0c\x63urrent_time\x18\x01 \x01(\t2M\n\x0bTimeService\x12>\n\rGetServerTime\x12\x15.timesync.TimeRequest\x1a\x16.timesync.TimeResponseb\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\ntime.proto\x12\x08timesync\"\x1f\n\x0bTimeRequest\x12\x10\n\x08timezone\x18\x01 \x01(\t\"$\n\x0cTimeResponse\x12\x14\n\x0c\x63urrent_time\x18\x01 \x01(\t2M\n\x0bTimeService\x12>\n\rGetServerTime\x12\x15.timesync.TimeRequest\x1a\x16.timesync.TimeResponseb\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -32,9 +32,9 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'time_pb2', _globals)
 if not _descriptor._USE_C_DESCRIPTORS:
   DESCRIPTOR._loaded_options = None
   _globals['_TIMEREQUEST']._serialized_start=24
-  _globals['_TIMEREQUEST']._serialized_end=37
-  _globals['_TIMERESPONSE']._serialized_start=39
-  _globals['_TIMERESPONSE']._serialized_end=75
-  _globals['_TIMESERVICE']._serialized_start=77
-  _globals['_TIMESERVICE']._serialized_end=154
+  _globals['_TIMEREQUEST']._serialized_end=55
+  _globals['_TIMERESPONSE']._serialized_start=57
+  _globals['_TIMERESPONSE']._serialized_end=93
+  _globals['_TIMESERVICE']._serialized_start=95
+  _globals['_TIMESERVICE']._serialized_end=172
 # @@protoc_insertion_point(module_scope)
